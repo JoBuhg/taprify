@@ -2,7 +2,7 @@ package com.taprify.musicservice.interfaces.rest.dto.album;
 
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
-import com.taprify.musicservice.domain.vo.Album;
+import com.taprify.musicservice.domain.vo.albumdto.Album;
 import java.util.List;
 
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
