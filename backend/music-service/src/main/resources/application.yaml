@@ -1,0 +1,15 @@
+#Definindo valores estaticos para a aplicação spotify funcionar
+spotify:
+  client-id: d0ba58067bba45738fcc1017d212e65a
+  client-secret: 5ac8bd29ddcc486198e516b54a3c493b
+  redirect-uri: https://127.0.0.1:8083/spotify/api/callback
+
+#definindo chave de certificado para https local
+server:
+  port: 8083
+  ssl:
+    enabled: true
+    key-store: classpath:keystore.p12
+    key-store-password: JoaoChave
+    key-store-type: PKCS12
+    key-alias: springboot-ssl

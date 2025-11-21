@@ -1,21 +1,21 @@
-package com.taprify.musicservice.domain.vo;
+package com.taprify.musicservice.domain.vo.artistdto;
 
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
 @Setter
+@Getter
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
-public class ExternalUrls {
-    private String spotify;
+public class Followers {
+    private Integer total;
 
-    public ExternalUrls() {
+    public Followers() {
     }
 
-    public ExternalUrls(String spotify) {
-        this.spotify = spotify;
+    public Followers(Integer total) {
+        this.total = total;
     }
 
 }
